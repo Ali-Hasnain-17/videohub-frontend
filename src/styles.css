@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/*----------------------- Navbar ------------------------------------------------------------*/
+.navbar {
+  display: flex;
+  padding: 1.3rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 5px 10px #ccc;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.searchbar {
+  flex-grow: 1;
+  padding: 0 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  width: 50%;
+  height: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 1.2rem 15px;
+  font-size: 1rem;
+}
+
+.search-btn {
+  height: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 5%;
+  border: none;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1.2rem 0;
+}
+
+.search-input:focus {
+  border: 2px solid black;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 0.75rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  max-height: 30px;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+/*------------------------------------------ Auth Form ----------------------------------------------------------------*/
+.auth-form {
+  padding-top: 2.5rem;
+  width: 30%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.auth-form h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100%;
+  margin-top: 1.2rem;
+}
+
+.form-label {
+  color: rgb(43, 40, 40);
+}
+
+.form-input {
+  height: 30px;
+  padding: 0.85rem;
+  border: 1px solid rgb(43, 40, 40);
+}
+
+.auth-btn {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.auth-btn:disabled {
+  background-color: rgb(187, 186, 186);
+  border-color: rgb(187, 186, 186);
+  color: black;
+}
+
+.error-text {
+  color: rgb(253, 18, 18);
+  font-size: 0.8rem;
+}
+
+.error-input {
+  border-color: rgb(253, 18, 18);
+  color: rgb(253, 18, 18);
+  outline-color: rgb(253, 18, 18);
+}
+
+.success-box {
+  background-color: rgb(60, 255, 60);
+  color: rgb(6, 39, 6);
+  border: 2px solid rgb(6, 39, 6);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error-box {
+  background-color: rgb(255, 117, 83);
+  color: rgb(68, 20, 0);
+  border: 2px solid rgb(68, 20, 0);
+  text-align: center;
+  margin-top: 20px;
+}
